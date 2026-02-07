@@ -1,4 +1,4 @@
-# 🏗️  RAG – Construction Assistant 
+#   RAG – Construction Assistant 
 
 This project implements a Retrieval-Augmented Generation (RAG) pipeline for a construction marketplace assistant.  
 The goal is to answer user questions strictly using internal company documents (Markdown files: `doc1.md`, `doc2.md`, `doc3.md`) instead of hallucinated model knowledge.
