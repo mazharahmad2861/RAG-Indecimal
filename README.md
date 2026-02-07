@@ -99,6 +99,51 @@ How retrieval works:
 
 To prevent hallucinations, we enforce **strict grounding** in the LLM prompt:
 
+#### Why this works
+
+- The LLM only receives the retrieved chunks  
+- Explicit instructions forbid external knowledge  
+- If documents lack information → model must decline  
+- Ensures reliable and fully explainable outputs  
+
+---
+
+## Example End-to-End Flow
+
+1. User question:  
+   “What factors cause construction delays?”
+
+2. Query embedding is generated  
+3. FAISS retrieves chunk:  
+   “Delays occur due to material shortages, labor unavailability, and weather conditions.”
+
+4. Gemini responds using only this chunk:  
+   “Construction delays can occur due to material shortages, weather issues, and lack of labor.”
+
+The UI displays:
+
+- Retrieved chunks  
+- Final grounded answer  
+
+---
+
+# Summary
+
+This Mini RAG system provides:
+
+- Semantic search over internal `.md` documents  
+- Accurate and grounded LLM answers  
+- Transparent context display  
+- Streamlit-based chatbot UI  
+- Lightweight CPU-friendly architecture  
+
+Ideal for:
+
+- Internal assistants  
+- Enterprise policy/FAQ bots  
+- Knowledge-base question answering  
+- Document-grounded enterprise AI systems
+
 
 
 
