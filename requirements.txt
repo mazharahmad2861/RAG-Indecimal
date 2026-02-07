@@ -1,0 +1,8 @@
+langchain
+langchain-community
+sentence-transformers
+faiss-cpu
+python-dotenv
+google-generativeai
+streamlit
+streamlit-chat
