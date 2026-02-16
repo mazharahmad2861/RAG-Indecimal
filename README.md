@@ -17,10 +17,11 @@ This Mini-RAG system is built with:
 - FAISS – for fast and local vector similarity search.
 - Google Gemini 2.5 Flash – for grounded and accurate answer generation.
 - Streamlit – for building a clean and interactive UI.
+- Docker - containerized and run using Docker (Ensures consistent environment setup)
 
 ## RAG Pipeline Flow
 
-1. Load company documents (`.md`)
+1. Load company documents 
 2. Chunk documents into meaningful segments
 3. Convert chunks into vector embeddings
 4. Store embeddings inside a local FAISS index
@@ -31,7 +32,7 @@ This Mini-RAG system is built with:
 
 ---
 
-## 2. Embedding Model & LLM Used (and Why)
+## 2. Embedding Model & LLM Used 
 
 ### Embedding Model: `all-MiniLM-L6-v2`
 
@@ -134,7 +135,8 @@ This Mini RAG system provides:
 - Semantic search over internal `.md` documents  
 - Accurate and grounded LLM answers  
 - Transparent context display  
-- Streamlit-based chatbot UI  
+- Streamlit-based chatbot UI
+- Docker ensures consistent environment setup
 - Lightweight CPU-friendly architecture  
 
 Ideal for:
